@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JetpackCompose_A_to_Z</string>
+    <string name="from_string_resource">From String Resource</string>
 </resources>
