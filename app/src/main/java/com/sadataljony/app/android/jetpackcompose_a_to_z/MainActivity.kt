@@ -6,7 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -14,6 +17,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -45,9 +49,18 @@ fun SimpleCheckboxComponent() {
     val cbThursday = remember { mutableStateOf(false) }
     val cbFriday = remember { mutableStateOf(false) }
     val cbSaturday = remember { mutableStateOf(false) }
+
     Column {
-        Text(text = "Select the working days")
-        Row {
+        Text(
+            text = "Select the working days",
+        )
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
@@ -63,7 +76,13 @@ fun SimpleCheckboxComponent() {
             // adding padding to our text of checkbox
             Text(text = "Sunday", modifier = Modifier.padding(16.dp))
         }
-        Row {
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
@@ -79,7 +98,13 @@ fun SimpleCheckboxComponent() {
             // adding padding to our text of checkbox
             Text(text = "Monday", modifier = Modifier.padding(16.dp))
         }
-        Row {
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
@@ -95,7 +120,13 @@ fun SimpleCheckboxComponent() {
             // adding padding to our text of checkbox
             Text(text = "Tuesday", modifier = Modifier.padding(16.dp))
         }
-        Row {
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
@@ -111,7 +142,13 @@ fun SimpleCheckboxComponent() {
             // adding padding to our text of checkbox
             Text(text = "Wednesday", modifier = Modifier.padding(16.dp))
         }
-        Row {
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
@@ -127,7 +164,13 @@ fun SimpleCheckboxComponent() {
             // adding padding to our text of checkbox
             Text(text = "Thursday", modifier = Modifier.padding(16.dp))
         }
-        Row {
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
@@ -143,7 +186,13 @@ fun SimpleCheckboxComponent() {
             // adding padding to our text of checkbox
             Text(text = "Friday", modifier = Modifier.padding(16.dp))
         }
-        Row {
+        Row(
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             Checkbox(
                 // below line we are setting
                 // the state of checkbox.
